@@ -1,0 +1,16 @@
+pytest
+pylint
+ipdb
+jupyterlab
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+sentencepiece
+transformers
+
+# API
+fastapi
+pytz
+uvicorn

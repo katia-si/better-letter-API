@@ -20,7 +20,7 @@ def root():
     'better': 'letter'
 }
 
-@app.post("/translate")
+@app.get("/translate")
 def translate_text(german_text: str):
     translated_text = translate_to_english(german_text)
     return {"translated_text": translated_text}

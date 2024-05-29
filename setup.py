@@ -5,7 +5,7 @@ with open("requirements.txt") as f:
     content = f.readlines()
 requirements = [x.strip() for x in content if "git+" not in x]
 
-setup(name='better-letter',
+setup(name='betterletter',
       version="0.0.1",
       description="Simplify and summarize official German letters",
       license="CC0 1.0 Universal",

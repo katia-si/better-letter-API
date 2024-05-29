@@ -1,2 +1,2 @@
 run_api:
-	uvicorn mlops.fast:app --reload
+	uvicorn better_letter.API.fast:app --reload

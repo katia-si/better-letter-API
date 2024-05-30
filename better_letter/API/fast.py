@@ -2,6 +2,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from better_letter.language_model.translator_ger_eng import translate_to_english
+from fastapi import FastAPI, UploadFile
+from PIL import Image
+from io import BytesIO
 
 app = FastAPI()
 
@@ -24,3 +27,8 @@ def root():
 def translate_text(german_text: str):
     translated_text = translate_to_english(german_text)
     return {"translated_text": translated_text}
+
+@app.post("/summary_eng")
+async def process(file: UploadFile):
+    contents = await file.read()
+    image = Image.open(BytesIO(contents)).convert("L")

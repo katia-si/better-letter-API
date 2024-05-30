@@ -8,9 +8,10 @@ sentencepiece
 transformers
 easyocr
 sacremoses
+pillow
+io
 
 # API
 fastapi
 pytz
 uvicorn
-pillow

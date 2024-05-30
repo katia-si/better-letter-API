@@ -7,9 +7,10 @@ scikit-learn
 sentencepiece
 transformers
 easyocr
+sacremoses
 
 # API
 fastapi
 pytz
 uvicorn
-PIL
+pillow

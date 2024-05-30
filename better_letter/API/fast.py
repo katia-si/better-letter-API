@@ -28,7 +28,7 @@ def root():
 
 @app.get("/translate")
 def translate_text(german_text: str):
-    translated_text = translate_to_english(german_text)
+    translated_text = translate_to_english_and_print(german_text)
     return {"translated_text": translated_text}
 
 @app.post("/summary_eng")

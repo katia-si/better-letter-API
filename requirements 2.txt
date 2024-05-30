@@ -1,15 +1,12 @@
 pytest
 pylint
 ipdb
+jupyterlab
 numpy
 pandas
+matplotlib
+seaborn
 scikit-learn
 sentencepiece
 transformers
 easyocr
-
-# API
-fastapi
-pytz
-uvicorn
-PIL

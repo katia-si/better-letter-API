@@ -1,4 +1,3 @@
-import os
 import re
 
 def clean_extracted_text(text):
@@ -39,9 +38,13 @@ def clean_extracted_text(text):
     if berliner_sparkasse_index != -1:
         text = text[:berliner_sparkasse_index]
 
-    # print("Cleaned text:")
-    # print(text)
+    # find the index of the first comma and remove it and everything before it
+    first_comma_index = text.find(',')
+    if first_comma_index != -1:
+        text = text[first_comma_index+1:]
+
     return text
+
 
 def clean_extracted_text_and_print(text):
     """

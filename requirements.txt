@@ -1,15 +1,11 @@
 pytest
 pylint
 ipdb
-numpy
-pandas
-scikit-learn
 sentencepiece
 transformers
 easyocr
 sacremoses
 pillow
-io
 
 # API
 fastapi

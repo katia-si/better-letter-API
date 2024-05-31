@@ -1,5 +1,4 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-import os
 
 # Load pre-trained BART model and tokenizer for German
 tokenizer = AutoTokenizer.from_pretrained("Shahm/bart-german")

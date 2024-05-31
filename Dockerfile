@@ -6,5 +6,6 @@ COPY setup.py /setup.py
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+RUN pip install .
 
 CMD uvicorn better_letter.API.fast:app --host 0.0.0.0 --port $PORT

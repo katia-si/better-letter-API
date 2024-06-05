@@ -6,10 +6,7 @@ transformers
 easyocr
 sacremoses
 pillow
-<<<<<<< Updated upstream
-=======
 pytesseract
->>>>>>> Stashed changes
 
 # API
 fastapi

@@ -6,6 +6,9 @@ from better_letter.language_model.summarizer_long import generate_summary_dynami
 from better_letter.language_model.text_cleaner import clean_extracted_text
 
 app = FastAPI()
+
+#app.state.model = load_model()
+
 # allowing all middleware is optional, but good practice for dev purposes
 app.add_middleware(
     CORSMiddleware,
